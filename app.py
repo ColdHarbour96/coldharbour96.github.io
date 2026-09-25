@@ -1,0 +1,11 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hi():
+    return "<p>hi</p>"
+
+@app.route("/about/")
+def me():
+    return "<p>im gay</p>"
