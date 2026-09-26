@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Index</h1>
+<h1>目录</h1>
 <ul>
     {% for post in posts %}
         <li><a href="{{ url_for('post', slug=post.slug)}}">{{post.title}}</a></li>
