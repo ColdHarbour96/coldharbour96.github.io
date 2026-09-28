@@ -20,7 +20,7 @@ def index():
     posts = [load_post(post) for post in names]
     posts = sorted(posts, key=lambda p: p["date"], reverse=True)
     return render_template("index.html", posts=posts) 
-# key error date
+
 @app.route("/about/")
 def about():
     return render_template("about.html")
